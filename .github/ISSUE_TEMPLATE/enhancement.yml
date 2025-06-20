@@ -7,7 +7,7 @@ body:
   - type: checkboxes
     id: already_searched
     attributes:
-      label: "Have you checked if this is already explained elsewhere in the documentation?"
+      label: "Have you checked if this is already part of the documentation?"
       options:
         - label: "Yes"
           required: true
