@@ -16,7 +16,7 @@ body:
     attributes:
       value: "### Please fill in all required fields before submitting."
     
-  - type: input
+  - type: textarea
     id: clarif_description
     attributes:
       label: "Describe the issue"
