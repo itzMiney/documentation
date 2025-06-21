@@ -1,0 +1,17 @@
+name: Correction Request 
+description: Point out a section of the docs that needs correction
+title: "[Correction Request]: "
+labels: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: "### Please fill in all required fields before submitting."
+  - type: textarea
+    id: what-to-fix
+    attributes:
+      label: "What beeds correction"
+      description: What needs to be corrected in the documentation?
+      placeholder: Tell us what needs to be corrected!
+    validations:
+      required: true
