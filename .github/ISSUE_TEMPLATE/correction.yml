@@ -1,0 +1,32 @@
+name: Correction Request
+description: Suggest something that needs to be corrected in the documentation.
+labels: [correction request]
+body:
+- type: checkboxes
+  attributes:
+    label: Is there an existing request for this?
+    description: Please [search here](https://github.com/pterodactyl/documentation/issues?q=is%3Aissue) to see if someone else has already suggested this.
+    options:
+    - label: I have searched the existing issues before opening this correction request.
+      required: true
+
+- type: textarea
+  attributes:
+    label: Describe what needs to be corrected.
+    description: "A clear & concise description of what needs to be corrected."
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Describe the solution you'd like.
+    description: "You must explain how you'd like to see this corrected."
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Additional context to this request.
+    description: "Add any other context or screenshots about the correction request."
+  validations:
+    required: false
