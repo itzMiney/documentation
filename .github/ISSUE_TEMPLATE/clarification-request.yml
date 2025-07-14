@@ -1,0 +1,32 @@
+name: Clarification Request
+description: Suggest clarification for a section of the documetation.
+labels: [clarification request]
+body:
+- type: checkboxes
+  attributes:
+    label: Is there an existing request for this?
+    description: Please [search here](https://github.com/pterodactyl/documentation/issues?q=is%3Aissue) to see if someone else has already suggested this.
+    options:
+    - label: I have searched the existing issues before opening this clarification request.
+      required: true
+
+- type: textarea
+  attributes:
+    label: Describe what needs clarification.
+    description: "A clear & concise description of what needs clarification."
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Describe the solution you'd like.
+    description: "You must explain how you'd like to see this implemented."
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Additional context to this request.
+    description: "Add any other context or screenshots about the clarification request."
+  validations:
+    required: false
